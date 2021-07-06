@@ -40,3 +40,57 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const firstLink = document.querySelector('a:nth-of-type(1)')
+const secondLink = document.querySelector('a:nth-of-type(2)')
+const thirdLink = document.querySelector('a:nth-of-type(3)')
+const fourthLink = document.querySelector('a:nth-of-type(4)')
+const fifthLink = document.querySelector('a:nth-of-type(5)')
+const sixthLink = document.querySelector('a:nth-of-type(6)')
+firstLink.textContent = siteContent["nav"]["nav-item-1"]
+secondLink.textContent = siteContent["nav"]["nav-item-2"]
+thirdLink.textContent = siteContent["nav"]["nav-item-3"]
+fourthLink.textContent = siteContent["nav"]["nav-item-4"]
+fifthLink.textContent = siteContent["nav"]["nav-item-5"]
+sixthLink.textContent = siteContent["nav"]["nav-item-6"]
+
+const heading = document.querySelector('.cta-text h1')
+const ctaButton = document.querySelector('.cta-text button')
+const ctaImage = document.querySelector('.cta img')
+heading.textContent = siteContent['cta']['h1']
+ctaButton.textContent = siteContent['cta']['button']
+ctaImage.setAttribute('src', siteContent['cta']['img-src'])
+
+const featuresHeader = document.querySelector('.top-content .text-content:nth-of-type(1) h4')
+const featuresText = document.querySelector('.top-content .text-content:nth-of-type(1) p')
+const aboutHeader = document.querySelector('.top-content .text-content:nth-of-type(2) h4')
+const aboutText = document.querySelector('.top-content .text-content:nth-of-type(2) p')
+const middleImg = document.querySelector('.middle-img')
+const servicesHeader = document.querySelector('.bottom-content .text-content:nth-of-type(1) h4')
+const servicesText = document.querySelector('.bottom-content .text-content:nth-of-type(1) p')
+const productHeader = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4')
+const productText = document.querySelector('.bottom-content .text-content:nth-of-type(2) p')
+const visionHeader = document.querySelector('.bottom-content .text-content:nth-of-type(3) h4')
+const visionText = document.querySelector('.bottom-content .text-content:nth-of-type(3) p')
+const contactHeader = document.querySelector('.contact h4')
+const address = document.querySelector('.contact p:nth-of-type(1)')
+const phone = document.querySelector('.contact p:nth-of-type(2)')
+const email = document.querySelector('.contact p:nth-of-type(3)')
+const copyright = document.querySelector('footer p')
+
+featuresHeader.textContent = siteContent['main-content']['features-h4']
+featuresText.textContent = siteContent['main-content']['features-content']
+aboutHeader.textContent = siteContent['main-content']['about-h4']
+aboutText.textContent = siteContent['main-content']['about-content']
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
+servicesHeader.textContent = siteContent['main-content']['services-h4']
+servicesText.textContent = siteContent['main-content']['services-content']
+productHeader.textContent = siteContent['main-content']['product-h4']
+productText.textContent = siteContent['main-content']['product-content']
+visionHeader.textContent = siteContent['main-content']['vision-h4']
+visionText.textContent = siteContent['main-content']['vision-content']
+contactHeader.textContent = siteContent['contact']['contact-h4']
+address.textContent = siteContent['contact']['address']
+phone.textContent = siteContent['contact']['phone']
+email.textContent = siteContent['contact']['email']
+copyright.textContent = siteContent['footer']['copyright']
