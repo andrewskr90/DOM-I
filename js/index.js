@@ -56,7 +56,7 @@ sixthLink.textContent = siteContent["nav"]["nav-item-6"]
 
 const heading = document.querySelector('.cta-text h1')
 const ctaButton = document.querySelector('.cta-text button')
-const ctaImage = document.querySelector('.cta img')
+const ctaImage = document.querySelector('#cta-img')
 heading.textContent = siteContent['cta']['h1']
 ctaButton.textContent = siteContent['cta']['button']
 ctaImage.setAttribute('src', siteContent['cta']['img-src'])
@@ -65,7 +65,7 @@ const featuresHeader = document.querySelector('.top-content .text-content:nth-of
 const featuresText = document.querySelector('.top-content .text-content:nth-of-type(1) p')
 const aboutHeader = document.querySelector('.top-content .text-content:nth-of-type(2) h4')
 const aboutText = document.querySelector('.top-content .text-content:nth-of-type(2) p')
-const middleImg = document.querySelector('.middle-img')
+const middleImg = document.querySelector('#middle-img')
 const servicesHeader = document.querySelector('.bottom-content .text-content:nth-of-type(1) h4')
 const servicesText = document.querySelector('.bottom-content .text-content:nth-of-type(1) p')
 const productHeader = document.querySelector('.bottom-content .text-content:nth-of-type(2) h4')
@@ -94,3 +94,17 @@ address.textContent = siteContent['contact']['address']
 phone.textContent = siteContent['contact']['phone']
 email.textContent = siteContent['contact']['email']
 copyright.textContent = siteContent['footer']['copyright']
+
+const blogLink = document.createElement('a')
+blogLink.textContent = 'Blog'
+blogLink.href = '#'
+document.querySelector('nav').appendChild(blogLink)
+
+const socialsLink = document.createElement('a')
+socialsLink.textContent = 'Socials'
+socialsLink.href = '#'
+document.querySelector('nav').appendChild(socialsLink)
+
+const nav = document.querySelectorAll('nav a')
+nav.forEach(nav => nav.style.color = 'green')
+
